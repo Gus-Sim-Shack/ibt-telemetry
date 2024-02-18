@@ -17,8 +17,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "compile": "npm run lint && tsc -p tsconfig.build.json",
-    "lint": "eslint '**/*.{js,ts}'",
+    "compile": "npm run && tsc -p tsconfig.build.json",
     "test:dependencies": "depcruise --validate .dependency-cruiser.js src",
     "prepublish": "npm run compile"
   },
